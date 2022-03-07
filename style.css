@@ -1,0 +1,90 @@
+:root {
+    --dc: hsl(185, 75%, 39%);
+    --vddb: hsl(229, 23%, 23%);
+    --dgb: hsl(227, 10%, 46%);
+    --dg: hsl(0, 0%, 59%);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+.container {
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-top.svg);
+    min-height: 100vh;
+    background-repeat: no-repeat no-repeat;
+    background-position: top -178px left -42px, bottom -428px right -64px;
+    background-size: 620px 580px, 700px;
+    background-color: hsl(185, 75%, 39%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container main {
+    width: 86vw;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.container main .bg img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.cotnainer main .second {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.container main .second img{
+    border: 5px solid white;
+    width: 98px;
+    border-radius: 50%;
+    position: relative;
+    top: -59px;
+}
+
+.container main .second .user{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: -40px;
+}
+.container main .second .user span{
+    font-weight: 400;
+    color: var(--dgb);
+    margin-left: .4rem;
+}
+
+.container main .second .city{
+    font-weight: 400;
+    color: var(--dgb);
+    margin-top: -10px;
+    margin-bottom: 26px;
+}
+.container main .divider{
+    height: 2px;
+    background-color: var(--dg);
+    opacity: .2;
+}
+.container main .end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container main .end .number{
+    font-weight: 700;
+    margin: 24px 0 -8px 0;
+}
+.container main .end .text{
+    font-weight: 400;
+    color: var(--dgb);
+    font-size: .8rem;   
+    margin-bottom: 20px;
+
+}
